@@ -11,4 +11,14 @@ class WelcomeController extends Controller
         return 'Hello Word';
         // return view('welcome');
     }
+
+    public function aboutUs()
+    {
+        return 'Sobre-nos';
+    }
+
+    public function contact()
+    {
+        return 'Contato';
+    }
 }

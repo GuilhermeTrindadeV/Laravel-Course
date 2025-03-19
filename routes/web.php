@@ -15,3 +15,7 @@ use App\Http\Controllers\WelcomeController;
 
 Route::get('/', [WelcomeController::class, 'show']);
 
+Route::get('/sobre-nos', [WelcomeController::class, 'aboutUs']);
+
+Route::get('/contato', [WelcomeController::class, 'contact']);
+
