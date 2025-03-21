@@ -13,9 +13,17 @@ use App\Http\Controllers\WelcomeController;
 |
 */
 
-Route::get('/', [WelcomeController::class, 'show']);
+// Route::get('/', [WelcomeController::class, 'show']);
+Route::get('/', [\App\Http\Controllers\PrincipalController::class, 'principal']);
+Route::get('/sobre-nos', [\App\Http\Controllers\SobreNosController::class, 'sobreNos']);
+Route::get('/contato', [\App\Http\Controllers\ContatoController::class, 'contato']);
 
-Route::get('/sobre-nos', [WelcomeController::class, 'aboutUs']);
+/* Verbo Http
 
-Route::get('/contato', [WelcomeController::class, 'contact']);
+get
+post
+patch
+delete
+options
 
+*/

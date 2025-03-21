@@ -14,7 +14,7 @@ class WelcomeController extends Controller
 
     public function aboutUs()
     {
-        return 'Sobre-nos';
+        return 'Sobre-nos, TESTANDO';
     }
 
     public function contact()
