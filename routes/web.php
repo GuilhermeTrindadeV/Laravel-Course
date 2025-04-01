@@ -26,12 +26,12 @@ Route::prefix('/app')->group(function(){
     Route::get('/produtos', function(){return 'Produtos';})->name('app.produtos');
 });
 
-/* Verbo Http
+Route::get('/rota1', function(){
+    echo 'Rota 1';
+})->name('site.rota1');
 
-get
-post
-patch
-delete
-options
+Route::get('/rota2', function(){
+    return redirect()->route('site.rota1');
+})->name('site.rota2');
 
-*/
+// Route::redirect('/rota2', '/rota1');
