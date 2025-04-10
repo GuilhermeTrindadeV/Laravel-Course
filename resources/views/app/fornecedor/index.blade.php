@@ -14,11 +14,11 @@
 @endphp
 
 @isset($fornecedores)
-    Fornecedor: {{$fornecedores[1]['nome']}}
+    Fornecedor: {{$fornecedores[0]['nome']}}
     <br>
-    Status: {{$fornecedores[1]['status']}}
+    Status: {{$fornecedores[0]['status']}}
     <br>
-    CNPJ: {{$fornecedores[1]['cnpj'] ?? 'Dado não foi preenchido'}}
+    CNPJ: {{$fornecedores[0]['cnpj'] ?? 'Dado não foi preenchido'}}
 
     {{-- $variável testada não estiver definida
         ou
