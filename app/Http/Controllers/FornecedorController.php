@@ -32,7 +32,7 @@ class FornecedorController extends Controller
             ]
         ];
 
-        $fornecedores = [];    
+        // $fornecedores = [];    
 
         return view('app.fornecedor.index', compact('fornecedores'));
     }

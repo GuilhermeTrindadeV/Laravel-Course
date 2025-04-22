@@ -15,9 +15,9 @@
 
 @isset($fornecedores)
     @forelse($fornecedores as $indice => $fornecedor)
-        Fornecedor: {{$fornecedor['nome']}}
+        Fornecedor: @{{$fornecedor['nome']}}
         <br>
-        Status: {{$fornecedor['status']}}
+        Status: @{{$fornecedor['status']}}
         <br>
         CNPJ: {{$fornecedor['cnpj'] ?? 'Dado não foi preenchido'}}
         <br>
@@ -25,6 +25,5 @@
     <hr>
     @empty
         <p>Não há fornecedores cadastrados.</p> 
-    @endforelse
     @endforelse
 @endisset
